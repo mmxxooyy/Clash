@@ -1,9 +1,9 @@
 custom:
-# Emby 公益服卷毛鼠 subconverter 外部配置文件
+  enable_rule_generator: false
+  overwrite_original_rules: false
+  # Emby 公益服卷毛鼠 subconverter 外部配置文件
   proxy_groups:
-    - {import: snippets/groups.txt}
     - {name: Emby-Jmsooo, type: select, rule: ["[]DIRECT`.*"]}
 
   rulesets:
     - {ruleset: "clash-classic:https://raw.githubusercontent.com/rartv/EmbyPublic/test/clash/rule-provider-emby.yaml", group: "Emby-Jmsooo"}
-    - {import: snippets/rulesets.txt}
